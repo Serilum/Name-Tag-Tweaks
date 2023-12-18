@@ -1,14 +1,14 @@
 modLoader="javafml"
 loaderVersion="*"
 license="All rights reserved"
-issueTrackerURL="https://github.com/ricksouth/serilum-mc-mods/labels/Mod:%20Name%20Tag%20Tweaks"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Name%20Tag%20Tweaks"
 logoFile="icon.png"
 
 [[mods]]
 modId="nametagtweaks"
-version="3.1"
+version="3.2"
 displayName="Name Tag Tweaks"
-displayURL="https://curseforge.com/minecraft/mc-mods/name-tag-tweaks"
+displayURL="https://serilum.com/mod/name-tag-tweaks"
 authors="Rick South"
 description='''Adds name tag crafting recipe, /nametag command, and named entities drop their name tag on death.
 If you would like to contribute too, check out https://ricksouth.com/donate. Appreciate it! <3   
@@ -22,13 +22,15 @@ If you would like to contribute too, check out https://ricksouth.com/donate. App
 
 [[dependencies.nametagtweaks]]
     modId="collective"
+    type="required"
     mandatory=true
-    versionRange="[7.3,)"
+    versionRange="[7.21,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.nametagtweaks]]
     modId="minecraft"
+    type="required"
     mandatory=true
     versionRange="[1.19.2]"
     ordering="NONE"

@@ -2,7 +2,7 @@ package com.natamus.nametagtweaks.cmds;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.StringArgumentType;
-import com.natamus.collective.functions.StringFunctions;
+import com.natamus.collective.functions.MessageFunctions;
 import com.natamus.nametagtweaks.config.ConfigHandler;
 
 import net.minecraft.commands.CommandSourceStack;
@@ -20,7 +20,7 @@ public class NametagCommand {
 		dispatcher.register(Commands.literal("nametag")
 			.requires((iCommandSender) -> iCommandSender.getEntity() instanceof ServerPlayer)
 			.executes((command) -> {
-				StringFunctions.sendMessage(command.getSource(), "Usage: '/nametag <name>' while holding a name tag.", ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendMessage(command.getSource(), "Usage: '/nametag <name>' while holding a name tag.", ChatFormatting.DARK_GREEN);
 				return 1;
 			})
 			.then(Commands.argument("name", StringArgumentType.word())
@@ -35,7 +35,7 @@ public class NametagCommand {
 					nametagstack = player.getItemInHand(InteractionHand.OFF_HAND);
 				}
 				else {
-					StringFunctions.sendMessage(player, "Usage: '/nametag <name>' while holding a name tag.", ChatFormatting.RED);
+					MessageFunctions.sendMessage(player, "Usage: '/nametag <name>' while holding a name tag.", ChatFormatting.RED);
 					return 1;
 				}
 				
@@ -46,7 +46,7 @@ public class NametagCommand {
 				
 				nametagstack.setHoverName(Component.literal(name));
 				nametagstack.setRepairCost(0);
-				StringFunctions.sendMessage(player, "Set name value to '" + name + "'.", ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendMessage(player, "Set name value to '" + name + "'.", ChatFormatting.DARK_GREEN);
 				return 1;
 			}))
 		);

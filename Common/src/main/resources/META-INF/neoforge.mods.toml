@@ -22,7 +22,7 @@ If you would like to contribute too, check out https://serilum.com/donate. Appre
 [[dependencies.nametagtweaks]]
     modId="collective"
     type="required"
-    versionRange="[7.54,)"
+    versionRange="[7.57,)"
     ordering="NONE"
     side="BOTH"
 

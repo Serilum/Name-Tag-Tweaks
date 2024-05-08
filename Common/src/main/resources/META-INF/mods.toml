@@ -6,7 +6,7 @@ logoFile="icon.png"
 
 [[mods]]
 modId="nametagtweaks"
-version="3.3"
+version="3.4"
 displayName="Name Tag Tweaks"
 displayURL="https://serilum.com/mod/name-tag-tweaks"
 authors="Rick South"
@@ -22,7 +22,7 @@ If you would like to contribute too, check out https://serilum.com/donate. Appre
 [[dependencies.nametagtweaks]]
     modId="collective"
     mandatory=true
-    versionRange="[7.54,)"
+    versionRange="[7.57,)"
     ordering="NONE"
     side="BOTH"
 

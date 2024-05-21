@@ -44,7 +44,7 @@ public class NametagCommand {
 					name = name.replace("_", " ");
 				}
 				
-				nametagstack.set(DataComponents.ITEM_NAME, Component.literal(name));
+				nametagstack.set(DataComponents.CUSTOM_NAME, Component.literal(name));
 				nametagstack.set(DataComponents.REPAIR_COST, 0);
 				MessageFunctions.sendMessage(player, "Set name value to '" + name + "'.", ChatFormatting.DARK_GREEN);
 				return 1;

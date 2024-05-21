@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "nametagtweaks",
-  "version": "3.4",
+  "version": "3.5",
 
   "name": "Name Tag Tweaks",
   "description": "Adds name tag crafting recipe, /nametag command, and named entities drop their name tag on death.",
@@ -23,7 +23,7 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=21",
-    "collective": ">=7.57"
+    "collective": ">=7.58"
   },
 
   "custom": {
@@ -49,7 +49,6 @@
 	  " Jack",
 	  " Jeremy Langford",
 	  " Michael W. S.",
-	  " pepe1191",
 	  " Shana Gitnick",
 	  " Tyler Behl"
   ]

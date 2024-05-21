@@ -30,7 +30,7 @@ public class NameTagEvent {
 			ItemStack nametagstack = new ItemStack(Items.NAME_TAG, 1);
 			if (ConfigHandler.droppedNameTagbyEntityKeepsNameValue) {
 				Component name = entity.getName();
-				nametagstack.set(DataComponents.ITEM_NAME, name);
+				nametagstack.set(DataComponents.CUSTOM_NAME, name);
 			}
 			nametagstack.set(DataComponents.REPAIR_COST, 0);
 			

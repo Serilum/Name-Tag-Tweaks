@@ -1,6 +1,7 @@
 package com.natamus.nametagtweaks;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.nametagtweaks.neoforge.config.IntegrateNeoForgeConfig;
 import com.natamus.nametagtweaks.neoforge.events.NeoForgeNameTagEvent;
 import com.natamus.nametagtweaks.util.Reference;
@@ -15,6 +16,10 @@ import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
 public class ModNeoForge {
 	
 	public ModNeoForge(IEventBus modEventBus) {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		modEventBus.addListener(this::loadComplete);
 
 		setGlobalConstants();

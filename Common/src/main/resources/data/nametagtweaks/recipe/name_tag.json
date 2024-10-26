@@ -6,12 +6,8 @@
 		"P  "
 	],
 	"key": {
-		"P": {
-			"item": "minecraft:paper"
-		},
-		"S": {
-			"item": "minecraft:string"
-		}
+		"P": "minecraft:paper",
+		"S": "minecraft:string"
 	},
 	"result": {
 		"id": "minecraft:name_tag"

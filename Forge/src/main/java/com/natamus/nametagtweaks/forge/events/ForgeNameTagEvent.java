@@ -7,19 +7,17 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
-@EventBusSubscriber
 public class ForgeNameTagEvent {
     @SubscribeEvent
-    public void registerCommands(RegisterCommandsEvent e) {
+    public static void registerCommands(RegisterCommandsEvent e) {
     	if (ConfigHandler.enableNameTagCommand) {
     		NametagCommand.register(e.getDispatcher());
     	}
     }
 
 	@SubscribeEvent
-	public void mobItemDrop(LivingDeathEvent e) {
+	public static void mobItemDrop(LivingDeathEvent e) {
 		LivingEntity livingEntity = e.getEntity();
 		NameTagEvent.mobItemDrop(livingEntity.level(), e.getEntity(), e.getSource());
 	}

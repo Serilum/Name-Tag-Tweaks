@@ -21,7 +21,7 @@ public class NametagCommand {
 		dispatcher.register(Commands.literal("nametag")
 			.requires((iCommandSender) -> iCommandSender.getEntity() instanceof ServerPlayer)
 			.executes((command) -> {
-				MessageFunctions.sendMessage(command.getSource(), "Usage: '/nametag <name>' while holding a name tag.", ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendTranslatableMessage(command.getSource(), "collective.nametagtweaks.message.usagenametagname", ChatFormatting.DARK_GREEN);
 				return 1;
 			})
 			.then(Commands.argument("name", StringArgumentType.word())
@@ -36,7 +36,7 @@ public class NametagCommand {
 					nametagstack = player.getItemInHand(InteractionHand.OFF_HAND);
 				}
 				else {
-					MessageFunctions.sendMessage(player, "Usage: '/nametag <name>' while holding a name tag.", ChatFormatting.RED);
+					MessageFunctions.sendTranslatableMessage(player, "collective.nametagtweaks.message.usagenametagname", ChatFormatting.RED);
 					return 1;
 				}
 				
@@ -47,7 +47,7 @@ public class NametagCommand {
 				
 				nametagstack.set(DataComponents.CUSTOM_NAME, Component.literal(name));
 				nametagstack.set(DataComponents.REPAIR_COST, 0);
-				MessageFunctions.sendMessage(player, "Set name value to '" + name + "'.", ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendTranslatableMessage(player, "collective.nametagtweaks.message.setnamevalue", ChatFormatting.DARK_GREEN, name);
 				return 1;
 			}))
 		);

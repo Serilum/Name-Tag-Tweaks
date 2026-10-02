@@ -1,20 +1,20 @@
-package com.natamus.nametagtweaks.forge.events;
+package com.serilum.nametagtweaks.forge.events;
 
-import com.natamus.nametagtweaks.cmds.NametagCommand;
-import com.natamus.nametagtweaks.config.ConfigHandler;
-import com.natamus.nametagtweaks.events.NameTagEvent;
+import com.serilum.nametagtweaks.cmds.NametagCommand;
+import com.serilum.nametagtweaks.config.ConfigHandler;
+import com.serilum.nametagtweaks.events.NameTagEvent;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class ForgeNameTagEvent {
-    @SubscribeEvent
-    public static void registerCommands(RegisterCommandsEvent e) {
-    	if (ConfigHandler.enableNameTagCommand) {
-    		NametagCommand.register(e.getDispatcher());
-    	}
-    }
+	@SubscribeEvent
+	public static void registerCommands(RegisterCommandsEvent e) {
+		if (ConfigHandler.enableNameTagCommand) {
+			NametagCommand.register(e.getDispatcher());
+		}
+	}
 
 	@SubscribeEvent
 	public static void mobItemDrop(LivingDeathEvent e) {

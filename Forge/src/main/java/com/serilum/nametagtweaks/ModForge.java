@@ -1,10 +1,10 @@
-package com.natamus.nametagtweaks;
+package com.serilum.nametagtweaks;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.nametagtweaks.forge.config.IntegrateForgeConfig;
-import com.natamus.nametagtweaks.forge.events.ForgeNameTagEvent;
-import com.natamus.nametagtweaks.util.Reference;
+import com.serilum.nametagtweaks.forge.config.IntegrateForgeConfig;
+import com.serilum.nametagtweaks.forge.events.ForgeNameTagEvent;
+import com.serilum.nametagtweaks.util.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -32,7 +32,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	MinecraftForge.EVENT_BUS.register(ForgeNameTagEvent.class);
+		MinecraftForge.EVENT_BUS.register(ForgeNameTagEvent.class);
 	}
 
 	private static void setGlobalConstants() {

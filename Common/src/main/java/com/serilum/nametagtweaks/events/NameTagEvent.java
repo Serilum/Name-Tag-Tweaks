@@ -1,6 +1,6 @@
-package com.natamus.nametagtweaks.events;
+package com.serilum.nametagtweaks.events;
 
-import com.natamus.nametagtweaks.config.ConfigHandler;
+import com.serilum.nametagtweaks.config.ConfigHandler;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;

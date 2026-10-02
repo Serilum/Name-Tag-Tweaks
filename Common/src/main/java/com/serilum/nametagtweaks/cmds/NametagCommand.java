@@ -1,9 +1,9 @@
-package com.natamus.nametagtweaks.cmds;
+package com.serilum.nametagtweaks.cmds;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.natamus.collective.functions.MessageFunctions;
-import com.natamus.nametagtweaks.config.ConfigHandler;
+import com.serilum.nametagtweaks.config.ConfigHandler;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

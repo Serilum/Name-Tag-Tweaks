@@ -1,7 +1,7 @@
-package com.natamus.nametagtweaks.forge.config;
+package com.serilum.nametagtweaks.forge.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.nametagtweaks.util.Reference;
+import com.serilum.nametagtweaks.util.Reference;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 

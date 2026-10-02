@@ -1,6 +1,6 @@
-package com.natamus.nametagtweaks;
+package com.serilum.nametagtweaks;
 
-import com.natamus.nametagtweaks.config.ConfigHandler;
+import com.serilum.nametagtweaks.config.ConfigHandler;
 
 public class ModCommon {
 

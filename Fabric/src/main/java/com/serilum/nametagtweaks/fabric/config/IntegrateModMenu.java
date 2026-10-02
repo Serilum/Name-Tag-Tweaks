@@ -1,7 +1,7 @@
-package com.natamus.nametagtweaks.fabric.config;
+package com.serilum.nametagtweaks.fabric.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.nametagtweaks.util.Reference;
+import com.serilum.nametagtweaks.util.Reference;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 

@@ -1,12 +1,12 @@
-package com.natamus.nametagtweaks;
+package com.serilum.nametagtweaks;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.collective.fabric.callbacks.CollectiveEntityEvents;
-import com.natamus.nametagtweaks.cmds.NametagCommand;
-import com.natamus.nametagtweaks.config.ConfigHandler;
-import com.natamus.nametagtweaks.events.NameTagEvent;
-import com.natamus.nametagtweaks.util.Reference;
+import com.serilum.nametagtweaks.cmds.NametagCommand;
+import com.serilum.nametagtweaks.config.ConfigHandler;
+import com.serilum.nametagtweaks.events.NameTagEvent;
+import com.serilum.nametagtweaks.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.world.damagesource.DamageSource;
